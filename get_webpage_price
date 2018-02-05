@@ -1,0 +1,27 @@
+#IN python requests == 3.6.4
+
+
+import requests
+from bs4 import BeautifulSoup
+
+#PUT IN HTML SITE
+request = requests.get("http://www.webpage_url_goes_here.com/product-page")
+content = request.content
+soup = BeautifulSoup(content, "html.parser")
+
+#OG HTML CODE FROM WEBSITE EXAMPLE = <SPAN ITEMPROP="PRICE" CLASS="NOW-PRICE">$115.00</SPAN>
+element = soup.find("span", {"itemprop": "price", "class": "now-price"})
+string_price = element.text.strip()
+
+#DROPS THE FIRST CHAR FROM PRICE ($)
+price_without_symbol = string_price[1:]
+
+#CHANGES PRICE FROM STRING INTO A FLOAT
+price = float(price_without_symbol)
+
+#DETERMINE WHETHER TO BUY ITEM
+if price < 200:
+    print("You should buy the chair!")
+    print("The current price is {}".format(string_price))
+else:
+    print("Don't buy; it's too expensive!")
