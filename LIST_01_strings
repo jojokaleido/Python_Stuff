@@ -29,3 +29,61 @@ string1 = "This is a string"
 "meh" in string1
 #RESULT = FALSE
 
+#6: EXTRACT SUBSTRING FROM STRING
+string1 = "one two three"
+string1[0:3]
+#RESULT = ONE
+string1[8:]
+#RESULT = THREE
+
+#7: CUT / SUBSTITUTE STRINGS INSIDE STRINGS
+string1 = "Here are a string"
+edit_string1 = string1[:5] + "is" + string1[7:]
+print(edit_string1)
+#RESULT = HERE IS A STRING
+
+#8: REPLACE STRINGS USING FUNCTION
+string1 = "Here are a string"
+edit_string1 = string1.replace("are", "is", 1)
+
+#9: REVERSE A STRING
+string1 = "Hello World"
+reverse_string = string1[::-1]
+print(string1)
+#RESULT = dlroW olleH
+
+#10: REMOVE USER INPUT WHITESPACE BEFORE/AFTER STRING
+string1 = "Space"
+string2 = string1.strip()
+print(string2)
+
+#11: MAKE STRING ALL UPPERCASE OR LOWERCASE
+string1 = "Hello World"
+print(string1.lower())
+#RESULT = hello world
+print(string1.upper())
+#RESULT = HELLOW WORLD
+
+#12: LOOP OVER A STRING TO INSERT A REPEATING STRING
+string = 0123456789
+for i in range(10):
+  print(string1[i], " and ")
+  #RESULT: 0 AND 1 AND 2 AND ...
+  
+  #13 STRING STATS (LENGTH/MAX/MIN/FREQ COUNT)
+  string1 = "Hello World"
+  len(string1)
+  RESULT = 11
+  min(string1)
+  RESULT IS ALPHABETICALY SMALLEST/LOWEST = " "
+  max(string1)
+  RESULT IS LAST ALPHABETICALLY = W
+  string1.count('o')
+  RESULT IS FREQ COUNT OF 'O' IN STRING = 2
+  
+  
+
+
+
+
+
