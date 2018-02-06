@@ -1,0 +1,31 @@
+#1: CONCATENATING STRINGS
+this_string = "hello" + "world"
+print(this_string)
+ #RESULT = hello world
+
+#2: MULTI CONCATENATION
+this_string = "Hello " * 3
+print(this_string)
+#RESULT = Hello Hello Hello
+
+#3: CONCATENATE NON STRING [str() changes a number to string]
+this_string = "Count = " + str(42)
+print(this_string)
+#RESULT = Count = 42
+
+#4: COMPARE 2 STRINGS
+string1 = "Hello"
+string2 = "World"
+if string1=string2:
+  print("Strings are equal.")
+else:
+  print("Strings are not equal.")
+#RESULT = STRINGS ARE NOT EQUAL
+
+#5: SEARCH IN A STRING FOR A SUBSTRING
+string1 = "This is a string"
+"is" in string1
+#RESULT = TRUE
+"meh" in string1
+#RESULT = FALSE
+
