@@ -1,0 +1,7 @@
+
+
+
+OPEN A ZIPPED FILE
+import zipfile
+new_zip = zipfile.ZipFile('new_zip.zip', mode='r')
+
