@@ -1,0 +1,60 @@
+
+
+#01: CHECK BIT LENGTH
+var1 = 123456789
+var1.bit_length()
+#RESULT = 27
+
+#02: ROUND OUT FLOAT INTO INTEGER
+var1 = 1234.56
+  int(c)
+RESULT DROPS ALL AFTER DECIMAL = 1234
+  round(c)
+RESULT ROUND UP/DOWN = 1235
+  round(c,1)
+RESULT ROUNDS UP TO FIRST DECI = 1234.6
+
+#3: GENERATE RANDOM NUM
+import random
+  random.seed()
+
+#4: RANDOM FLOAT NUM BETWEEN (0,1)
+  random.random()
+
+#5: SELECT RANDOMLY FROM LIST
+  list = [1,2,3,4]
+  random.choice[items]
+
+#6: GET CURRENT DATE/TIME
+import datetime
+  now_datetime = datetime.datetime.now()
+  now_datetime.year
+RESULT = CURRENT YEAR
+  now_datetime.weekday()
+RESULT IS THE NUMBER OF THE DAY OUT OF 7 DAYS
+
+#7: ASSIGN VARS WITH DATETIME METHODS
+import datetime
+  now_datetime = datetime.datetime.now()
+  now_date = now_datetime.date()
+  now_time = now_datetime.time()
+  
+#8: FIND DATE/TIME DIFFERENCES
+import datetime
+  time1 = datetime.datetime.now()
+  time2 = datetime.datetime.now()
+  time_diff = time1 - time2
+  time_diff.days
+RESULT IS NUM OF DAYS IN BETWEEN
+  time_diff.seconds
+RESULT IS NUM OF SECONDS IN BETWEEN
+
+#9: FORMAT A DATETIME STRING
+time1 = datetime.datetime.now()
+time1.strtime("%A %d. %B %Y %I:%M%p")
+RESULT = WEDNESDAY, 7 FEBRUARY 2018 12:00AM
+
+20
+
+
+
