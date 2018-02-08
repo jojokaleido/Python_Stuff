@@ -68,19 +68,28 @@ print(string1.upper())
 string = 0123456789
 for i in range(10):
   print(string1[i], " and ")
-  #RESULT: 0 AND 1 AND 2 AND ...
+#RESULT: 0 AND 1 AND 2 AND ...
   
-  #13 STRING STATS (LENGTH/MAX/MIN/FREQ COUNT)
-  string1 = "Hello World"
-  len(string1)
-  RESULT = 11
-  min(string1)
-  RESULT IS ALPHABETICALY SMALLEST/LOWEST = " "
-  max(string1)
-  RESULT IS LAST ALPHABETICALLY = W
-  string1.count('o')
-  RESULT IS FREQ COUNT OF 'O' IN STRING = 2
+#13 STRING STATS (LENGTH/MAX/MIN/FREQ COUNT)
+string1 = "Hello World"
+len(string1)
+RESULT = 11
+min(string1)
+RESULT IS ALPHABETICALY SMALLEST/LOWEST = " "
+max(string1)
+RESULT IS LAST ALPHABETICALLY = W
+string1.count('o')
+RESULT IS FREQ COUNT OF 'O' IN STRING = 2
   
+ #14: REPLACE STRINGS WITHIN STRINGS
+ string1 = 'this is a string'
+ string1.replace(' ', '|')
+ RESULT = this|is|a|string|
+ 
+ #15: STRIP/DELETE PARTS
+ 'http://www.python.org'.strip('http://')
+ 
+ 
   
 
 
