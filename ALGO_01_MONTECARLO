@@ -1,0 +1,25 @@
+#FOR MONTE CARLO VALUATION OF EUROPEAN CALL OPTIONS
+#IN BLACK-SCHOLES-MERTON MODEL
+from numpy import *
+
+#PARAMETERS
+  #INITIAL INDEX LEVEL:
+S0 = 100
+  #STRIKE PRICE:
+K = 105
+  #TIME TO MATURITY:
+T = 1.0
+  #RISKLESS SHORT PRICE:
+r = 0.05
+  #VOLITILITY:
+sigma = 0.2
+
+#SIMULATIONS:
+I = 100000
+
+z = random.standard_normal(I)
+ST = S0 * exp((r - 0.5 * sigma **2) * T + sigma * sqrt(T) *z)
+hT = maximum(ST - K, 0)
+C0 = exp(-r * T) * sum(hT) / I
+
+print "The value of the European call option is %5.3" %C0)
